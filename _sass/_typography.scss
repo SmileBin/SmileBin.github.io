@@ -35,6 +35,15 @@ a {
 /*--------------
   Header
   -------------- */
+.header-title span.motto {
+  color:#b3b3b3;
+  font-size:19px;
+}
+
+.header-nav a.menu {
+  text-transform: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }

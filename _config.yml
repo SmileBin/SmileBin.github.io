@@ -4,6 +4,7 @@
 
 # Basic
 name:               "Sung Bin's Blog :)"
+motto:               "> 배움에 있어서는 게으르지 말자"
 
 author:
   facebook:         sungbin2da
@@ -45,7 +46,7 @@ timezone:           Asia/Seoul
 permalink:          /:year-:month-:day/:title/
 
 # Pagination
-paginate:           5
+paginate:           7
 paginate_path:      /page:num/
 
 # Markdown

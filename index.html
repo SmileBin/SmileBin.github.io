@@ -4,14 +4,15 @@ layout: default
 
 <header class="header">
   <div class="header-title">
-    <a href="{{ site.url }}{{ site.baseurl }}"><img class="profile" src="https://smilebin.github.io/images/profile.png" height="70" width="70">{{ site.name }}</a>
+    <a href="{{ site.url }}{{ site.baseurl }}"><img class="profile" src="https://smilebin.github.io/images/profile.png" height="70" width="70">{{ site.name }}</a><br>
+    <span class="motto">{{ site.motto }}</span>
   </div>
   <nav class="header-nav">
     {% for nav in site.nav %}
     {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-    <a href="{{ nav.url }}">{{ nav.name }}</a>
+    <a href="{{ nav.url }}" class="menu">{{ nav.name }}</a>
     {% else %}
-    <a href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
+    <a href="{{ nav.url | prepend: site.baseurl }}" class="menu">{{ nav.name }}</a>
     {% endif %}
     {% endfor %}
   </nav>
