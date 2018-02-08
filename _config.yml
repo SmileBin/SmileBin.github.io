@@ -3,14 +3,14 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "Kiko Plus"
+name:               "Sung Bin's Blog :)"
 
 author:
-  facebook:         your-id
+  facebook:         sungbin2da
   youtubeUser:      your-id
   youtubeChannel:   your-id
   twitter:          your-id
-  github:           your-id
+  github:           smilebin/smilebin.github.io
   stackoverflow:    your-id
   quora:            your-id
   linkedin:         your-id
@@ -20,7 +20,7 @@ author:
   reddit:           your-id
   medium:           your-id
   tumblr:           your-id
-  email:            your-id@your-email.com
+  email:            smile.bin.c@gmail.com
 
 copyright:
   year:             2017
@@ -32,7 +32,7 @@ google-analytics:
 
 # Disqus
 disqus:
-  id:               "kiko-plus"
+  id:               ""
 
 # URL
 url:                "https://smilebin.github.io" # the base hostname & protocol for your site
@@ -62,7 +62,7 @@ nav:
   - name:           "Tags"
     url:            "/tags"
   - name:           "Github"
-    url:            "https://github.com/smileBin"
+    url:            "https://github.com/SmileBin"
 
 # Sass
 sass:
