@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World!"
 description: "깃헙 블로그 첫 게시글!"
-date: 2017-02-09
+date: 2018-02-09
 tags: [샘플 포스트, 테스트, 스타일]
 comments: true
 share: true
