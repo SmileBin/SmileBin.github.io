@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 기본 명명규칙"
+title: "Angular 명명규칙/스타일 가이드"
 description: "Angular 공식 페이지에서 제안하는 명명규칙 기본"
 date: 2018-02-12
 tags: [angular, naming]
