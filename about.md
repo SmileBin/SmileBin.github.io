@@ -8,7 +8,7 @@ permalink: /about/
 위의 단어들이 잘 어울리는 사람이 되고 싶은 나.
 
 ## 회사에서의 나, 경험하고 내가 했던 일들
-Software Architect Specialist 
+Software Architect Specialist (2012.6 ~ 현재 at LG CNS)
 - Spring / Java
 - Angular 5 / Javascript
 - Server management ( WEB(apache, ...), WAS(tomcat/weblogic, ...) )
@@ -16,6 +16,9 @@ Software Architect Specialist
 - Deploy development environment
 - Provide development guide
 - git / JIRA / Bitbucket 활용
+
+Baker & McKenzie LLP (2011.08 ~ 2012.02 in New York)
+- IT intern 
 
 ## 흥미
  - 개발 : Javascript, 신기술...
