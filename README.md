@@ -1,10 +1,15 @@
-> NOTE! Kiko-plus theme will not be update anymore. Please see the new and easier version, [kiko-now](https://github.com/AWEEKJ/kiko-now) theme which is mixed [jekyll-now](https://github.com/barryclark/jekyll-now) and Kiko-plus.
+> 성빈의 블로그's README.md
 
-# Kiko Plus Theme
+# 성빈이의 블로그 (theme : Kiko Plus Theme)
 
-![image](/images/image.png)
+Jekyll 기반으로 구성하였으며 향후 Angular 작업 버전으로 변경 예정
+(Angular 작업버전 만들다가 포스트를 못올리는 것 방지를 위해 그냥 일단 구성..)
 
-You can see live demo [here](https://aweekj.github.io/Kiko-plus). This theme is inspired by [Kiko](http://github.com/gfjaru/Kiko) theme.
+## 구성
+ - About
+ - Posts
+ - Tags
+ - Links
 
 ## Features
 
@@ -129,4 +134,4 @@ $ rake preview
 
 ## License
 
-This theme is released under MIT License.
+> This theme is released under MIT License.
