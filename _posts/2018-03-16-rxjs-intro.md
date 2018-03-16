@@ -122,11 +122,15 @@ Subject는 Observable 과 Observer 둘 다 될 수 있는 특별한 형태로 Su
 #### 2-1. Subject 종류
 Subject는 4종류로 분류된다.
 - AsyncSubject  
+AsyncSubject는 소스 Observable로부터 배출된 마지막 값 emit(배출)하고 소스 Observalbe의 동작이 완료된 후에야 동작한다. (만약, 소스 Observable이 아무 값도 배출하지 않으면 AsyncSubject 역시 아무 값도 배출하지 않는다.)
 ![AsyncSubject](https://smilebin.github.io/images/S.AsyncSubject.png)
 - BehaviorSubject  
+BehaviorSubject는 PublishSubject와 거의 같지만 BehaviorSubject는 반드시 값을 초기화를 해줘야 하며 BehaviorSubject는 Observer에게 subscribe하기전 마지막 이벤트 혹은 초기 값부터 emit 하게 된다.
 ![BehaviorSubject](https://smilebin.github.io/images/S.BehaviorSubject.png)
 - PublishSubject  
+PublishSubject는 subscribe 전의 이벤트는 emit하지 않습니다. subscribe한 후의 이벤트만을 emit합니다. 그리고 에러 이벤트가 발생하면 그 후의 이벤트는 emit 하지 않습니다.  
 ![PublishSubject](https://smilebin.github.io/images/S.PublishSubject.png)
 - ReplaySubject  
+ReplaySubject는 미리 정해진 사이즈 만큼 가장 최근의 이벤트를 새로운 Subscriber에게 전달한다.
 ![ReplaySubject](https://smilebin.github.io/images/S.ReplaySubject.png)
 
