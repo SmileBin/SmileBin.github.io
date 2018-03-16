@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Rxjs 알아가기"
+title: "RxJS 알아가기"
 description: "Rxjs를 써오면서.. 아직 어려운 녀석"
 date: 2018-03-16
 tags: [angular, rxjs, subject]
@@ -114,6 +114,19 @@ Observable은 항목들을 언제 배출할까? 이건 Observable에 따라 다�
 
 
 ### 2. Subject
-Subject의 설명을 보면 '옵저버이면서도 옵저버블이다.' 라는 설명이 되어 있다. 
+Subject는 Observable 과 Observer 둘 다 될 수 있는 특별한 형태로 Subject는 Observables을 subscribe(구독) 할 수 있고 다시 emit(방출)할 수도 있다. Subject에 값을 담아서 가지고 있다가 observable 형태로 제공해주기도 하며, Observer로써 next함수를 통해 구독자에게 값을 넘겨주는 역할을 하기도 한다. 나는 Angular에서 두 개의 컴포넌트가 값을 공유하면서 공유 시 이벤트전달도 서로 하는 용도로 Subject를 사용을 주로 했으며, 아주 편리하게 사용했다.
 
-![subjectToObserver](https://smilebin.github.io/images/subject-observer.png)
+![Subject와 Observer관계](https://smilebin.github.io/images/subject-observer.png)
+
+
+#### 2-1. Subject 종류
+Subject는 4종류로 분류된다.
+- AsyncSubject  
+![AsyncSubject](https://smilebin.github.io/images/S.AsyncSubject.png)
+- BehaviorSubject  
+![BehaviorSubject](https://smilebin.github.io/images/S.BehaviorSubject.png)
+- PublishSubject  
+![PublishSubject](https://smilebin.github.io/images/S.PublishSubject.png)
+- ReplaySubject  
+![ReplaySubject](https://smilebin.github.io/images/S.ReplaySubject.png)
+
