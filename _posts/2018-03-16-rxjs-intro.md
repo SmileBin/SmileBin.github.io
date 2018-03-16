@@ -134,3 +134,36 @@ PublishSubject는 subscribe 전의 이벤트는 emit하지 않습니다. subscri
 ReplaySubject는 미리 정해진 사이즈 만큼 가장 최근의 이벤트를 새로운 Subscriber에게 전달한다.
 ![ReplaySubject](https://smilebin.github.io/images/S.ReplaySubject.png)
 
+
+#### 2-2. Angular 적용 예시
+아래는 기본 Subject를 이용한 심플한 예시다.
+```ts
+// Service
+@Service
+
+...
+
+transferSubject: Subject<any> = new Subject<any>();
+
+setObj(inData: any) {
+    this.transferSubject.next(inData);
+}
+
+getObj(): Observable<any> {
+    return this.transferSubject.asObservable();
+}
+
+
+// Component1
+// 데이터를 서비스의 함수를 호출하여 전달하며, 이벤트를 바로 발생시켜 컴포넌트 2에서 바로 로직을 실행시키는 트리거 역할을 해줌
+this.transferService.setObj({hello: 'World!'});
+
+
+// Component2
+// 서비스의 데이터 저장을 구독하여, 데이터가 저장되면 해당하는 값을 구독하여 바로 콘솔로 찍어주는 기능.
+this.transferService.getObj().subscribe(result => console.log(result));
+
+```
+
+### 3. 기타..
+RxJS를 사용하여 Angular 내에서 다양한 컴포넌트들이 공통의 데이터의 업데이트에 대한 이벤트를 구독하여 공통적으로 처리하는 기능이나 다양한 유틸성 기능을 구현하는 예제는 향후 포스트에서 다루기로 하자.
