@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "RxJS 알아가기"
-description: "Rxjs를 써오면서.. 아직 어려운 녀석"
+title: "Reactive Programming : RxJS 알아가기"
+description: "RxJS를 써오면서.. 아직 어려운 녀석"
 date: 2018-03-16
 tags: [angular, rxjs, subject]
 comments: true
