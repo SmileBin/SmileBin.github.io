@@ -167,27 +167,39 @@ HTTP request 중 PUT, DELETE, TRACE, OPTIONS 요청을 제한하고, 자바파�
 
 #### 디렉토리 지정
 
-WEB 디렉토리
-아파치 디렉토리
-서비스 디렉토리
-로그 디렉토리
+- WEB 디렉토리
+>ex) /app/web
+- 아파치 디렉토리
+>ex) /app/web/apache
+- 서비스 디렉토리
+>ex) /app/svc/
+- 로그 디렉토리
+>ex) /logs
 
 #### 설치버전 확인
-아파치
+- 아파치
+>ex) /app/web/apache/bin/httpd -v
+아파치는 컴파일하여 설치하여야 하며, 자세한 사항은 공식 페이지 참조...
 
 #### 로그 설정
-accesslog
-errorlog
-mod-jk
+- accesslog, customlog, errorlog (대상파일 : httpd.conf, httpd-vhost.conf, httpd-ssl.conf 등)  
+로그디렉토리, 파일명 형태 지정이 되야 하며, 로테이션 형태로 로그가 저장되어야 함
 
 #### 설정 표준
-conf
-( mpm, htp directory, ...)
-톰캣연동
-( mod-jk/Proxy, SSL)
-SSL 
-(protocol, http-ssl)
+- conf  
+(httpd.conf /  httpd-default.conf / httpd-mpm.conf / httpd-ssl.conf)
+- mpm
+- 톰캣연동  
+( mod-jk/ Proxy, SSL)
+- SSL 인증서 구성  
+- 설정 context 확인
+>ex) httpd -t
 
 #### 보안 
-구동 계정확인
-디렉토리 권한 확인
+- 구동 계정확인  
+ex) ps -ef | grep httpd
+- 디렉토리 권한 확인 (chmod -R 700)
+>ex) ls -al /app/web/apache
+- HTTP request 정책 및 디렉토리 설정
+HTTP Request는 GET, POST만 허용하며, 디렉토리 지시자 설정 확인  
+
